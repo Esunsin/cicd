@@ -18,10 +18,10 @@ jobs:
         uses: cloudtype-github-actions/deploy@v1
         with:
           token: ${{ secrets.CLOUDTYPE_TOKEN }}
-          project: jinchan/cicd # 워크스페이스 이름/프로젝트 이름 ex) nbc.docker/cicd
+          project: jinchan/cicd
           stage: main
           yaml: |
-            name: cicd# 프로젝트 이름 ex) `cicd`
+            name: cicd
             app: java@17
             options:
               ports: 8080
